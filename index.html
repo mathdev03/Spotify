@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
 
     <!--Importação da CDN para exibir icones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
@@ -19,7 +21,7 @@
             <!--Logo da Spotify-->
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo da spotify">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="logo da spotify">
                 </a>
             </div>
 
@@ -76,6 +78,46 @@
             </div>
 
         </div>
+    </div>
+
+    <!-- Tela Principal da página -->
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" 
+                    maxlength="800" placeholder="O que você quer ouvir?"/>
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Rodapé do projeto-->
+    <div class="baseboard">
+        <footer class="baseboard__footer">
+            <div class="paragrafos">
+                <p class="text title"> Testar o premium de graça</p>
+                <p class="text subtitle">Inscreva-se para curtir música ilimitada e podcasts
+                    só com alguns anúncios. Não precisa de cartão de crédito</p>
+            </div>
+            <button class="baseboard__button">
+                <span>Inscreva-se grátis</span>
+            </button>
+        </footer>
     </div>
 </body>
 </html>
