@@ -1,0 +1,20 @@
+
+/* Define os elementos de tamanho para cada tela de dispositivos */
+
+@media screen and (max-width: 1600px){
+    .offer__list-item{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1369px){
+    .offer__list-item{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1136px){
+    .offer__list-item{
+        grid-template-columns: 1fr 1fr;
+    }
+}
